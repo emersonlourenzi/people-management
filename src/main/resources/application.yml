@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: /people-management
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: management
+
+server:
+  error:
+    include-message: "always"
+  port: 9000
