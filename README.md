@@ -1,4 +1,4 @@
-# API Voto cooperativismo
+# API Management people
 
 # Configurações
 
@@ -10,7 +10,7 @@
 
 # Java
 
-* Ultilizar versão 11 do [java](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html).
+* Ultilizar versão 17 do [java](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
 
 # Docker
 
