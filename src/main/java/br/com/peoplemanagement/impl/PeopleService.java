@@ -53,4 +53,9 @@ public class PeopleService {
                 .map(PeopleImplRequestToEntity::mapFrom));
     }
 
+    public Mono<PeopleImplResponse> findPeopleByIdentifier(String id) {
+        return peopleRepository.findByIdentifier(id)
+            .switchIfEmpty(Mono.defer(() -> ExceptionUtils.getErrorByIdentifier(id)))
+            .map(PeopleEntityToResponseImpl::mapFrom);
+    }
 }
