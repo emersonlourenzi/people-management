@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "a8871ba0-66ca-47ea-8e56-d3a25fc8bfff",
+		"name": "Collection management people",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8645927"
+	},
+	"item": [
+		{
+			"name": "0.0.0.0:9000/v1/people/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"eu\",\n    \"identifier\":\"12345678912\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:9000/v1/people/create",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"people",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "0.0.0.0:9000/v1/people/find/12345678912",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "0.0.0.0:9000/v1/people/find/12345678912",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "9000",
+					"path": [
+						"v1",
+						"people",
+						"find",
+						"12345678912"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
